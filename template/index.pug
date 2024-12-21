@@ -1,0 +1,298 @@
+include ../mixins/dataNumber.pug
+include ../mixins/dataItem.pug
+include ../mixins/dataReport.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="assets/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+        script( src="https://cdn.tailwindcss.com")
+        script( src="tailwind.config.js")
+
+    body 
+        //- Top Header 
+        div(class="bg-primary")
+            div(class="container px-[16px] mx-auto")
+                div(class="text-white flex py-[10px] text-[12px] sm:text-[14px] items-center")
+                    div(class="flex-1 flex justify-center")
+                        div(class="font-[400]") Đăng ký ngay để được giảm 20%. 
+                        a(href="#" class="underline ml-[5px] font-[500]") Đăng ký ngay 
+                    button(class="sm:inline-block hidden")
+                        <i class="fa-solid fa-xmark text-[15px]"></i>
+        //- End top header 
+
+        //- Header 
+        div(class="header sm:py-[24px] py-[20px]")
+            div(class="container px-[16px] mx-auto")
+                div(class="header__wrap flex items-center sm:gap-[40px] justify-between")
+                    div(class="header__logo flex items-center gap-[16px]") 
+                        button(class ="lg:hidden inline-block text-[24px]") <i class="fa-solid fa-bars"></i>
+                        div(class="font-[700] sm:text-[32px] text-[25px]") 28.SHOP
+                    ul(class="header__list hidden lg:flex gap-[24px] font-[400] text-[16px] ")
+                        li 
+                            a(href="#") Giới thiệu 
+                        li 
+                            a(href="#") Sản Phẩm 
+                        li 
+                            a(href="#") Bài Viết 
+                        li 
+                            a(href="#") Liên Hệ
+                    form(action="#" class="bg-[#F0F0F0] md:flex hidden gap-[12px] px-[16px] py-[12px] flex-1 rounded-[62px] ") 
+                        input(type="text" name="product" placeholder ="Tìm kiếm sản phẩm..." class="bg-transparent order-[2] flex-1 ")
+                        button(class = "text-[#00000066] order-[1] text-[20px]") 
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    div(class="flex gap-[14px]")
+                        a(href="#" class="inline-block text-[20px] sm:hidden") <i class="fa-solid fa-magnifying-glass"></i>
+                        a(href="#" class="text-[20px]") <i class="fa-solid fa-cart-shopping"></i>
+                        a(href="#" class="text-[20px]") <i class="fa-regular fa-circle-user"></i>
+        //- End header 
+
+        //- Section 1
+        div(class="section-1 bg-[#F2F0F1]")
+            div(class="container px-[16px] mx-auto")
+                div(class="section-1__wrap flex flex-wrap items-center")
+                    div(class="section-1__content w-[100%] lg:w-[48%] lg:mt-[0px] mt-[40px]")
+                        h1(class="section-1__title font-[900] xl:text-[48px]  sm:text-[35px] text-[28px] text-primary") CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI
+                        div(class="section-1__desc font-[400] xl:text-[16px] text-[14px] text-[#00000099] mt-[10px] xl:mb-[50px] mb-[30px]") Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.
+                        a(href="#" class="sm:inline-block block bg-primary rounded-[62px] px-[64px]  text-center py-[16px] font-[500] text-white") Xem ngay 
+                        div(class="section1__listdata xl:mt-[50px] mt-[30px] flex flex-wrap  sm:justify-start justify-center sm:gap-[0px] gap-x-[75px] gap-y-[10px]")
+                            +dataItem("200+","Thương Hiệu","yes")
+                            +dataItem("2,000+","Sản Phẩm Chất Lượng","yes") px-[40px]
+                            +dataItem("30,000+","Khách Hàng","no")
+                    div(class="section-1__image lg:ml-[60px] lg:flex-1 flex-none w-[100%] relative pt-[50px]")
+                        img(src="assets/images/image-main.jpg" class="w-[100%]")
+                        img(src="assets/images/image-2.svg" class="absolute top-[45%] left-[0px] sm:block hidden")  
+                        img(src="assets/images/image-1.svg" class="absolute top-[10%] right-[0px] sm:block hidden")  
+        //- End section 1
+
+        //- Section 2
+        div(class="section-2 bg-[#000000]")
+            div(class="container px-[16px] mx-auto")
+                div(class="section-2__wrap flex flex-wrap sm:gap-x-[60px] gap-x-[34px] gap-y-[30px] sm:py-[43px] py-[35px] justify-center")
+                    img(src="assets/images/section-2-image-1.png", alt="" class="sm:h-[32px] h-[23px]")
+                    img(src="assets/images/section-2-image-2.png", alt="" class="sm:h-[32px] h-[23px]")
+                    img(src="assets/images/section-2-image-3.png", alt="" class="sm:h-[32px] h-[23px]")
+                    img(src="assets/images/section-2-image-4.png", alt="" class="sm:h-[32px] h-[23px]")
+                    img(src="assets/images/section-2-image-5.png", alt="" class="sm:h-[32px] h-[23px]")
+        //- End section 2
+
+        -
+            var list = [
+                {
+                    img: "assets/images/section-3-image1.jpg",
+                    name:"Áo Thun Nam Đơn Giản",
+                    stars:4,
+                    price:120000
+                },
+                {
+                    img: "assets/images/section-3-image2.jpg",
+                    name:"Quần Jean Nam Phong Cách",
+                    stars:5,
+                    price:480000,
+                    oldPrice:600000,
+                    promotion:"20%"
+                },
+                {
+                    img: "assets/images/section-3-image3.jpg",
+                    name:"Áo Sơ Mi Caro",
+                    stars:3,
+                    price:220000
+                },
+                {
+                    img: "assets/images/section-3-image4.jpg",
+                    name:"Áo Thun Nam Sọc Cam",
+                    stars:5,
+                    price:120000,
+                    oldPrice:180000,
+                    promotion:"30%"
+                }
+            ];
+
+        //- Section 3
+        div(class="section-3")
+            div(class="container px-[16px] mx-auto")
+                div(class="section-3__wrap sm:py-[62px] py-[40px] border-b-[1px]")
+                    h2(class="section-3__title font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px] text-center") Thời trang mới 
+                    div(class="section-3__wrap grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[40px]")
+                        each item in list
+                            +Item(item)
+                    div(class= "text-center")
+                        a(href="#" class ="sm:inline-block block py-[16px] px-[63px] border-[1px] border-[#0000001A] rounded-[62px]") Xem tất cả 
+        //- End section 3
+
+        //- Data for section 4
+        -
+            var list2 = [
+                {
+                    img: "assets/images/section-4-image-1.jpg",
+                    name:"Áo Sơ Mi Sọc Dọc",
+                    stars:4,
+                    price:120000
+                },
+                {
+                    img: "assets/images/section-4-image-2.jpg",
+                    name:"Áo Thun Nam In Hình",
+                    stars:5,
+                    price:480000,
+                    oldPrice:600000,
+                    promotion:"20%"
+                },
+                {
+                    img: "assets/images/section-4-image-3.jpg",
+                    name:"Quần Short BERMUDA",
+                    stars:3,
+                    price:220000
+                },
+                {
+                    img: "assets/images/section-4-image-4.jpg",
+                    name:"Quần Jean Màu Đen",
+                    stars:5,
+                    price:120000,
+                    oldPrice:180000,
+                    promotion:"30%"
+                }
+            ];
+
+        //- Section 4
+        div(class="section-4")
+            div(class="container px-[16px] mx-auto")
+                div(class="section-4__wrap sm:py-[62px] py-[40px] border-b-[1px]")
+                    h2(class="section-4__title font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px] text-center") Giảm giá nhiều
+                    div(class="section-4__wrap grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[40px]")
+                        each item in list2
+                            +Item(item)
+                    div(class= "text-center")
+                        a(href="#" class ="sm:inline-block block py-[16px] px-[63px] border-[1px] border-[#0000001A] rounded-[62px]") Xem tất cả 
+        //- End section 4
+
+        //- Section 5
+        div(class="section-5 mt-[76px]")
+            div(class="container px-[16px] mx-auto")
+                div(class="section-5__wrap bg-[#F0F0F0] md:py-[70px] py-[28px] md:px-[64px] px-[24px] rounded-[40px]")
+                    h2(class="uppercase font-[700] md:text-[48px] text-[32px] md:mb-[60px] mb-[16px] text-center") Danh mục nổi bật
+                    div(class="grid md:grid-cols-3 grid-cols-1 gap-x-[20px] gap-y-[20px]")
+                        a(href="#" class="relative rounded-[20px] truncate")
+                            img(src="assets/images/section-5-image-1.jpg" class="w-[100%] md:h-[100%] h-[190px] object-cover")
+                            h3(class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] font-[700] lg:text-[36px] text-[24px]") Đơn giản
+                        a(href="#" class="relative rounded-[20px] truncate md:col-span-2")
+                            img(src="assets/images/section-5-image-2.jpg" class="w-[100%] md:h-[100%] h-[190px] object-cover")
+                            h3(class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]") Lịch Lãm
+                        a(href="#" class="relative rounded-[20px] truncate md:col-span-2")
+                            img(src="assets/images/section-5-image-3.jpg" class="w-[100%] md:h-[100%] h-[190px] object-cover")
+                            h3(class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]") Dạ Hội
+                        a(href="#" class="relative rounded-[20px] truncate")
+                            img(src="assets/images/section-5-image-4.jpg" class="w-[100%] md:h-[100%] h-[190px] object-cover")
+                            h3(class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]") Gym
+
+        //- End section 5
+
+        //- Data for section 6
+        -
+            var listReport =[
+                {
+                    star:5,
+                    name:"Le Van A",
+                    comment:"Tôi rất ngạc nhiên trước chất lượng và kiểu dáng của những bộ quần áo từ 28.SHOP. Từ trang phục thường ngày đến trang phục thanh lịch, mọi món đồ tôi mua đều vượt quá sự mong đợi của tôi."
+                },
+                {
+                    star:4,
+                    name:"Le Van B",
+                    comment:"Việc tìm kiếm quần áo phù hợp với phong cách cá nhân của tôi từng là một thử thách cho đến khi tôi khám phá ra 28.SHOP. Hàng loạt lựa chọn mà họ cung cấp thực sự đáng chú ý."
+                },
+                {
+                    star:5,
+                    name:"Le Van C",
+                    comment:"Là một người luôn tìm kiếm những món đồ thời trang độc đáo, tôi rất vui khi tình cờ biết đến 28.SHOP. Việc lựa chọn quần áo không chỉ đa dạng mà còn bắt kịp xu hướng mới nhất."
+                },
+            ]
+
+        //- report
+        div(class = "report sm:mt-[86px] mt-[40px]")
+            div(class="container px-[16px] mx-auto")
+                div(class = "report__wrap")
+                    h2(class="report__title uppercase font-[700] sm:text-[48px] text-[32px] sm:mb-[38px] mb-[32px]") Cảm nhận của khách hàng
+                    div(class="report__list grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]")
+                        each item in listReport
+                            +report(item)
+        //- End report
+
+        //- registor 
+        div(class="registor mt-[80px] relative")
+            div(class="container px-[16px] mx-auto")
+                div(class="registor__wrap bg-primary text-white sm:py-[36px] py-[32px] sm:px-[64px] px-[23px] rounded-[20px] flex flex-wrap justify-between items-center gap-[20px]")
+                    h2(class="font-[700] xl:text-[40px] text-[32px] lg:w-[49%] w-[100%]") CẬP NHẬT VỀ ƯU ĐÃI MỚI NHẤT CỦA CHÚNG TÔI
+                    div(class="lg:w-[349px] w-[100%] flex flex-col gap-[14px]")
+                        div(class = "px-[16px] py-[12px] bg-[#FFFFFF] rounded-[62px] flex items-center gap-[14px] w-[100%]") 
+                            <i class="fa-solid fa-envelope text-[#00000066]"></i>
+                            input(type="text" placeholder = "Nhập email của bạn..." class="sm:text-[16px] text-[14px] font-[400] text-primary bg-transparent flex-1")
+                        div(class)
+                            button(class="py-[12px] w-[100%] bg-[#FFFFFF] rounded-[62px] text-primary font-[500] sm:text-[16px] text-[14px]") Đăng Ký Nhận Tin 
+        //- End registor 
+
+        //- Footer 
+        div(class="bg-[#F0F0F0] sm:pt-[146px] pt-[206px] sm:mt-[-96px] mt-[-166px] sm:pb-[84px] pb-[30px]")
+            div(class="container px-[16px] mx-auto")
+                div(class="wrap-1 flex flex-wrap justify-between sm:gap-x-[10px] gap-x-[0px] gap-y-[32px] pb-[48px] mb-[30px] border-b-[1px] border-b-[#0000001A]")
+                    div(class="lg:w-[248px] w-[100%] sm:mb-[0px] mb-[40px]")
+                        div(class="font-[700] sm:text-[33px] text-[28px] text-primary lg:mb-[20px] mb-[15px]") 28.SHOP
+                        p(class="font-[400] text-[14px] text-[#00000099] lg:mb-[35px] mb-[20px]") Chúng tôi có những bộ quần áo phù hợp với phong cách của bạn và bạn có thể tự hào khi mặc.
+                        div(class="flex gap-[12px] items-center")
+                            a(href="" class="border-[1px] border-[#00000033] hover:border-primary border bg-white hover:bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center hover:text-white")
+                                <i class="fa-brands fa-twitter text-[12px]"></i>
+                            a(href="" class="border-[1px] border-[#00000033] bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center ")
+                                <i class="fa-brands fa-facebook"></i>
+                            a(href="" class="border-[1px] border-[#00000033] hover:border-primary border bg-white hover:bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center hover:text-white")
+                                <i class="fa-brands fa-instagram text-[14px]"></i>
+                    div(class="sm:w-auto w-[50%]")
+                        h2(class = "font-[500] text-[16px] mb-[26px] uppercase") CÔNG TY
+                        ul(class)
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Giới Thiệu        
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Sản Phẩm         
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Công Việc         
+                            li(class = "font-[400] text-[16px] text-[#00000099]")
+                                a(href="#") Việc Làm     
+                    div(class="sm:w-auto w-[50%]")
+                        h2(class = "font-[500] text-[16px] mb-[26px] uppercase") Trợ giúp
+                        ul(class)
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Hỗ Trợ Khách Hàng       
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Thông Tin Đơn Hàng         
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Điều Khoản & Điều Kiện        
+                            li(class = "font-[400] text-[16px] text-[#00000099]")
+                                a(href="#") Chính Sách    
+                    div(class="sm:w-auto w-[50%]")
+                        h2(class = "font-[500] text-[16px] mb-[26px] uppercase") FAQ
+                        ul(class)
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Tài Khoản       
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Quản Lý Đơn Hàng         
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Đơn Hàng        
+                            li(class = "font-[400] text-[16px] text-[#00000099]")
+                                a(href="#") Thanh Toán 
+                    div(class="sm:w-auto w-[50%]")
+                        h2(class = "font-[500] text-[16px] mb-[26px] uppercase") CÔNG TY
+                        ul(class)
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Sách Miễn Phí      
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Bài Viết        
+                            li(class = "font-[400] text-[16px] text-[#00000099] mb-[16px]")
+                                a(href="#") Kiến Thức        
+                            li(class = "font-[400] text-[16px] text-[#00000099]")
+                                a(href="#") Youtube 
+                div(class ="flex flex-wrap sm:justify-between justify-center items-center")
+                    div(class = "font-[400] text-[14px] text-[#00000099] sm:mb-[0px] mb-[20px]") 28.SHOP © 2024, All Rights Reserved
+                    div(class) 
+                        img(src="assets/images/footer-browser.png", alt="")
+        //- End footer 

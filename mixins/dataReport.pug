@@ -1,0 +1,10 @@
+mixin report(item)
+    div(class="report__item py-[28px] px-[32px] border-[1px] rounded-[20px]")
+        div(class="report__star text-[#FFC633] mb-[15px]")
+            - for(var i = 1; i<= item.star ;i++)
+                <i class="fa-solid fa-star"></i>
+            - for(var i = item.star + 1 ; i <= 5 ; i++)
+                <i class="fa-regular fa-star"></i>
+        div(class="report__name font-[700] text-[20px] flex gap-[4px] items-center mb-[12px]") #{item.name}
+            <i class="fa-solid fa-circle-check text-[#01AB31]"></i>
+        div(class="report__comment font-[400] text-[16px] text-[#00000099] line-clamp-[5]") #{item.comment}

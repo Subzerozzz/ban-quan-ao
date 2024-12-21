@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+  </head>
+  <body> 
+    <div class="bg-primary">
+      <div class="container px-[16px] mx-auto">
+        <div class="text-white flex py-[10px] text-[12px] sm:text-[14px] items-center">
+          <div class="flex-1 flex justify-center">
+            <div class="font-[400]">Đăng ký ngay để được giảm 20%. </div><a class="underline ml-[5px] font-[500]" href="#">Đăng ký ngay </a>
+          </div>
+          <button class="sm:inline-block hidden"><i class="fa-solid fa-xmark text-[15px]"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="header sm:py-[24px] py-[20px]">
+      <div class="container px-[16px] mx-auto">
+        <div class="header__wrap flex items-center sm:gap-[40px] justify-between">
+          <div class="header__logo flex items-center gap-[16px]"> 
+            <button class="lg:hidden inline-block text-[24px]"><i class="fa-solid fa-bars"></i></button>
+            <div class="font-[700] sm:text-[32px] text-[25px]">28.SHOP</div>
+          </div>
+          <ul class="header__list hidden lg:flex gap-[24px] font-[400] text-[16px] ">
+            <li> <a href="#">Giới thiệu </a></li>
+            <li> <a href="#">Sản Phẩm </a></li>
+            <li> <a href="#">Bài Viết </a></li>
+            <li> <a href="#">Liên Hệ</a></li>
+          </ul>
+          <form class="bg-[#F0F0F0] md:flex hidden gap-[12px] px-[16px] py-[12px] flex-1 rounded-[62px] " action="#"> 
+            <input class="bg-transparent order-[2] flex-1 " type="text" name="product" placeholder="Tìm kiếm sản phẩm...">
+            <button class="text-[#00000066] order-[1] text-[20px]">
+               <i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <div class="flex gap-[14px]"><a class="inline-block text-[20px] sm:hidden" href="#"><i class="fa-solid fa-magnifying-glass"></i></a><a class="text-[20px]" href="#"><i class="fa-solid fa-cart-shopping"></i></a><a class="text-[20px]" href="#"><i class="fa-regular fa-circle-user"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-1 bg-[#F2F0F1]">
+      <div class="container px-[16px] mx-auto">
+        <div class="section-1__wrap flex flex-wrap items-center">
+          <div class="section-1__content w-[100%] lg:w-[48%] lg:mt-[0px] mt-[40px]">
+            <h1 class="section-1__title font-[900] xl:text-[48px]  sm:text-[35px] text-[28px] text-primary">CHUYÊN THỜI TRANG PHONG CÁCH, HIỆN ĐẠI</h1>
+            <div class="section-1__desc font-[400] xl:text-[16px] text-[14px] text-[#00000099] mt-[10px] xl:mb-[50px] mb-[30px]">Chúng tôi chuyên cung cấp nhiều loại quần áo được chế tác tỉ mỉ, được thiết kế để làm nổi bật cá tính của bạn và đáp ứng phong cách của bạn.</div><a class="sm:inline-block block bg-primary rounded-[62px] px-[64px]  text-center py-[16px] font-[500] text-white" href="#">Xem ngay </a>
+            <div class="section1__listdata xl:mt-[50px] mt-[30px] flex flex-wrap  sm:justify-start justify-center sm:gap-[0px] gap-x-[75px] gap-y-[10px]">
+              <div>
+                <div class="xl:pr-[32px] sm:pr-[24px] xl:mr-[32px] sm:mr-[26px] sm:border-r-[1px] border-r-[0px] border-r-[#0000001A] sm:text-left text-center">
+                  <div class="font-[700] xl:text-[40px] text-[24px]">200+</div>
+                  <div class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]">Thương Hiệu</div>
+                </div>
+              </div>
+              <div>
+                <div class="xl:pr-[32px] sm:pr-[24px] xl:mr-[32px] sm:mr-[26px] sm:border-r-[1px] border-r-[0px] border-r-[#0000001A] sm:text-left text-center">
+                  <div class="font-[700] xl:text-[40px] text-[24px]">2,000+</div>
+                  <div class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]">Sản Phẩm Chất Lượng</div>
+                </div>
+              </div>
+              <div>
+                <div class="sm:text-left text-center">
+                  <div class="font-[700] xl:text-[40px] text-[24px]">30,000+</div>
+                  <div class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]">Khách Hàng</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-1__image lg:ml-[60px] lg:flex-1 flex-none w-[100%] relative pt-[50px]"><img class="w-[100%]" src="assets/images/image-main.jpg"><img class="absolute top-[45%] left-[0px] sm:block hidden" src="assets/images/image-2.svg"><img class="absolute top-[10%] right-[0px] sm:block hidden" src="assets/images/image-1.svg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-2 bg-[#000000]">
+      <div class="container px-[16px] mx-auto">
+        <div class="section-2__wrap flex flex-wrap sm:gap-x-[60px] gap-x-[34px] gap-y-[30px] sm:py-[43px] py-[35px] justify-center"><img class="sm:h-[32px] h-[23px]" src="assets/images/section-2-image-1.png" alt=""><img class="sm:h-[32px] h-[23px]" src="assets/images/section-2-image-2.png" alt=""><img class="sm:h-[32px] h-[23px]" src="assets/images/section-2-image-3.png" alt=""><img class="sm:h-[32px] h-[23px]" src="assets/images/section-2-image-4.png" alt=""><img class="sm:h-[32px] h-[23px]" src="assets/images/section-2-image-5.png" alt=""></div>
+      </div>
+    </div>
+    <div class="section-3">
+      <div class="container px-[16px] mx-auto">
+        <div class="section-3__wrap sm:py-[62px] py-[40px] border-b-[1px]">
+          <h2 class="section-3__title font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px] text-center">Thời trang mới </h2>
+          <div class="section-3__wrap grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[40px]"><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-3-image1.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">4/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">120000đ</div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-3-image2.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">5/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">480000đ</div>
+                <div class="section-3__oldPrice font-[700] text-[14px] text-[#00000066] line-through">600000đ</div>
+                <div class="section-3__promotion py-[6px] px-[12px] bg-[#FF33331A] text-[#FF3333] text-[12px] font-[500] rounded-[62px]">-20%                </div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-3-image3.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">3/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">220000đ</div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-3-image4.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">5/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">120000đ</div>
+                <div class="section-3__oldPrice font-[700] text-[14px] text-[#00000066] line-through">600000đ</div>
+                <div class="section-3__promotion py-[6px] px-[12px] bg-[#FF33331A] text-[#FF3333] text-[12px] font-[500] rounded-[62px]">-20%                </div>
+              </div></a>
+          </div>
+          <div class="text-center"><a class="sm:inline-block block py-[16px] px-[63px] border-[1px] border-[#0000001A] rounded-[62px]" href="#">Xem tất cả </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-4">
+      <div class="container px-[16px] mx-auto">
+        <div class="section-4__wrap sm:py-[62px] py-[40px] border-b-[1px]">
+          <h2 class="section-4__title font-[700] sm:text-[48px] text-[32px] text-primary sm:mb-[54px] mb-[32px] text-center">Giảm giá nhiều</h2>
+          <div class="section-4__wrap grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[40px]"><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-4-image-1.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">4/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">120000đ</div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-4-image-2.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">5/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">480000đ</div>
+                <div class="section-3__oldPrice font-[700] text-[14px] text-[#00000066] line-through">600000đ</div>
+                <div class="section-3__promotion py-[6px] px-[12px] bg-[#FF33331A] text-[#FF3333] text-[12px] font-[500] rounded-[62px]">-20%                </div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-4-image-3.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">3/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">220000đ</div>
+              </div></a><a class="section-3__item" href="#">
+              <div class="section-3__image mb-[20px] rounded-[20px] truncate"><img class="object-cover" src="assets/images/section-4-image-4.jpg" alt=""/></div>
+              <div class="section-3__name font-[700] text-[18px] text-primary mb-[10px]">Áo Thun Nam Đơn Giản </div>
+              <div class="section-3__feedback flex gap-[13px] items-center mb-[10px]">
+                <div class="section-3__star flex gap-[5px] text-[#FFC633]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="section-3__score font-[400px] text-[#00000099]">5/5</div>
+              </div>
+              <div class="section-3__price flex flex-wrap gap-[10px] items-center">
+                <div class="section-3__newPrice font-[700] text-[18px] text-primary">120000đ</div>
+                <div class="section-3__oldPrice font-[700] text-[14px] text-[#00000066] line-through">600000đ</div>
+                <div class="section-3__promotion py-[6px] px-[12px] bg-[#FF33331A] text-[#FF3333] text-[12px] font-[500] rounded-[62px]">-20%                </div>
+              </div></a>
+          </div>
+          <div class="text-center"><a class="sm:inline-block block py-[16px] px-[63px] border-[1px] border-[#0000001A] rounded-[62px]" href="#">Xem tất cả </a></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-5 mt-[76px]">
+      <div class="container px-[16px] mx-auto">
+        <div class="section-5__wrap bg-[#F0F0F0] md:py-[70px] py-[28px] md:px-[64px] px-[24px] rounded-[40px]">
+          <h2 class="uppercase font-[700] md:text-[48px] text-[32px] md:mb-[60px] mb-[16px] text-center">Danh mục nổi bật</h2>
+          <div class="grid md:grid-cols-3 grid-cols-1 gap-x-[20px] gap-y-[20px]"><a class="relative rounded-[20px] truncate" href="#"><img class="w-[100%] md:h-[100%] h-[190px] object-cover" src="assets/images/section-5-image-1.jpg">
+              <h3 class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] font-[700] lg:text-[36px] text-[24px]">Đơn giản</h3></a><a class="relative rounded-[20px] truncate md:col-span-2" href="#"><img class="w-[100%] md:h-[100%] h-[190px] object-cover" src="assets/images/section-5-image-2.jpg">
+              <h3 class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]">Lịch Lãm</h3></a><a class="relative rounded-[20px] truncate md:col-span-2" href="#"><img class="w-[100%] md:h-[100%] h-[190px] object-cover" src="assets/images/section-5-image-3.jpg">
+              <h3 class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]">Dạ Hội</h3></a><a class="relative rounded-[20px] truncate" href="#"><img class="w-[100%] md:h-[100%] h-[190px] object-cover" src="assets/images/section-5-image-4.jpg">
+              <h3 class="absolute lg:top-[26px] top-[17px] lg:left-[36px] left-[24px] left-[20px]  font-[700] lg:text-[36px] text-[24px]">Gym</h3></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="report sm:mt-[86px] mt-[40px]">
+      <div class="container px-[16px] mx-auto">
+        <div class="report__wrap">
+          <h2 class="report__title uppercase font-[700] sm:text-[48px] text-[32px] sm:mb-[38px] mb-[32px]">Cảm nhận của khách hàng</h2>
+          <div class="report__list grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px]">
+            <div class="report__item py-[28px] px-[32px] border-[1px] rounded-[20px]">
+              <div class="report__star text-[#FFC633] mb-[15px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <div class="report__name font-[700] text-[20px] flex gap-[4px] items-center mb-[12px]">Le Van A<i class="fa-solid fa-circle-check text-[#01AB31]"></i></div>
+              <div class="report__comment font-[400] text-[16px] text-[#00000099] line-clamp-[5]">Tôi rất ngạc nhiên trước chất lượng và kiểu dáng của những bộ quần áo từ 28.SHOP. Từ trang phục thường ngày đến trang phục thanh lịch, mọi món đồ tôi mua đều vượt quá sự mong đợi của tôi.</div>
+            </div>
+            <div class="report__item py-[28px] px-[32px] border-[1px] rounded-[20px]">
+              <div class="report__star text-[#FFC633] mb-[15px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="report__name font-[700] text-[20px] flex gap-[4px] items-center mb-[12px]">Le Van B<i class="fa-solid fa-circle-check text-[#01AB31]"></i></div>
+              <div class="report__comment font-[400] text-[16px] text-[#00000099] line-clamp-[5]">Việc tìm kiếm quần áo phù hợp với phong cách cá nhân của tôi từng là một thử thách cho đến khi tôi khám phá ra 28.SHOP. Hàng loạt lựa chọn mà họ cung cấp thực sự đáng chú ý.</div>
+            </div>
+            <div class="report__item py-[28px] px-[32px] border-[1px] rounded-[20px]">
+              <div class="report__star text-[#FFC633] mb-[15px]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <div class="report__name font-[700] text-[20px] flex gap-[4px] items-center mb-[12px]">Le Van C<i class="fa-solid fa-circle-check text-[#01AB31]"></i></div>
+              <div class="report__comment font-[400] text-[16px] text-[#00000099] line-clamp-[5]">Là một người luôn tìm kiếm những món đồ thời trang độc đáo, tôi rất vui khi tình cờ biết đến 28.SHOP. Việc lựa chọn quần áo không chỉ đa dạng mà còn bắt kịp xu hướng mới nhất.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="registor mt-[80px] relative">
+      <div class="container px-[16px] mx-auto">
+        <div class="registor__wrap bg-primary text-white sm:py-[36px] py-[32px] sm:px-[64px] px-[23px] rounded-[20px] flex flex-wrap justify-between items-center gap-[20px]">
+          <h2 class="font-[700] xl:text-[40px] text-[32px] lg:w-[49%] w-[100%]">CẬP NHẬT VỀ ƯU ĐÃI MỚI NHẤT CỦA CHÚNG TÔI</h2>
+          <div class="lg:w-[349px] w-[100%] flex flex-col gap-[14px]">
+            <div class="px-[16px] py-[12px] bg-[#FFFFFF] rounded-[62px] flex items-center gap-[14px] w-[100%]">
+               <i class="fa-solid fa-envelope text-[#00000066]"></i>
+              <input class="sm:text-[16px] text-[14px] font-[400] text-primary bg-transparent flex-1" type="text" placeholder="Nhập email của bạn...">
+            </div>
+            <div class="true">
+              <button class="py-[12px] w-[100%] bg-[#FFFFFF] rounded-[62px] text-primary font-[500] sm:text-[16px] text-[14px]">Đăng Ký Nhận Tin </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#F0F0F0] sm:pt-[146px] pt-[206px] sm:mt-[-96px] mt-[-166px] sm:pb-[84px] pb-[30px]">
+      <div class="container px-[16px] mx-auto">
+        <div class="wrap-1 flex flex-wrap justify-between sm:gap-x-[10px] gap-x-[0px] gap-y-[32px] pb-[48px] mb-[30px] border-b-[1px] border-b-[#0000001A]">
+          <div class="lg:w-[248px] w-[100%] sm:mb-[0px] mb-[40px]">
+            <div class="font-[700] sm:text-[33px] text-[28px] text-primary lg:mb-[20px] mb-[15px]">28.SHOP</div>
+            <p class="font-[400] text-[14px] text-[#00000099] lg:mb-[35px] mb-[20px]">Chúng tôi có những bộ quần áo phù hợp với phong cách của bạn và bạn có thể tự hào khi mặc.</p>
+            <div class="flex gap-[12px] items-center"><a class="border-[1px] border-[#00000033] hover:border-primary border bg-white hover:bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center hover:text-white" href=""><i class="fa-brands fa-twitter text-[12px]"></i></a><a class="border-[1px] border-[#00000033] bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center " href=""><i class="fa-brands fa-facebook"></i></a><a class="border-[1px] border-[#00000033] hover:border-primary border bg-white hover:bg-primary w-[28px] h-[28px] rounded-[999px] inline-flex items-center justify-center hover:text-white" href=""><i class="fa-brands fa-instagram text-[14px]"></i></a></div>
+          </div>
+          <div class="sm:w-auto w-[50%]">
+            <h2 class="font-[500] text-[16px] mb-[26px] uppercase">CÔNG TY</h2>
+            <ul class="true">
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Giới Thiệu        </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Sản Phẩm         </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Công Việc         </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099]"><a href="#">Việc Làm     </a></li>
+            </ul>
+          </div>
+          <div class="sm:w-auto w-[50%]">
+            <h2 class="font-[500] text-[16px] mb-[26px] uppercase">Trợ giúp</h2>
+            <ul class="true">
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Hỗ Trợ Khách Hàng       </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Thông Tin Đơn Hàng         </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Điều Khoản & Điều Kiện        </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099]"><a href="#">Chính Sách    </a></li>
+            </ul>
+          </div>
+          <div class="sm:w-auto w-[50%]">
+            <h2 class="font-[500] text-[16px] mb-[26px] uppercase">FAQ</h2>
+            <ul class="true">
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Tài Khoản       </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Quản Lý Đơn Hàng         </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Đơn Hàng        </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099]"><a href="#">Thanh Toán </a></li>
+            </ul>
+          </div>
+          <div class="sm:w-auto w-[50%]">
+            <h2 class="font-[500] text-[16px] mb-[26px] uppercase">CÔNG TY</h2>
+            <ul class="true">
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Sách Miễn Phí      </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Bài Viết        </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099] mb-[16px]"><a href="#">Kiến Thức        </a></li>
+              <li class="font-[400] text-[16px] text-[#00000099]"><a href="#">Youtube </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:justify-between justify-center items-center">
+          <div class="font-[400] text-[14px] text-[#00000099] sm:mb-[0px] mb-[20px]">28.SHOP © 2024, All Rights Reserved</div>
+          <div class="true"> <img src="assets/images/footer-browser.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

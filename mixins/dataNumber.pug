@@ -1,0 +1,10 @@
+mixin dataItem(number,desc,check)
+    div
+        if(check == "yes")
+            div(class="xl:pr-[32px] sm:pr-[24px] xl:mr-[32px] sm:mr-[26px] sm:border-r-[1px] border-r-[0px] border-r-[#0000001A] sm:text-left text-center")
+                div(class="font-[700] xl:text-[40px] text-[24px]") #{number}
+                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") #{desc}
+        if(check == "no")  
+            div(class="sm:text-left text-center")
+                div(class="font-[700] xl:text-[40px] text-[24px]") #{number}
+                div(class="font-[400] xl:text-[16px] text-[12px] text-[#00000099]") #{desc}
